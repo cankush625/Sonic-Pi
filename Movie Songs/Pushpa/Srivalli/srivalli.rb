@@ -284,16 +284,37 @@ sleep 0.20
 play (chord :E5, :major)
 sleep 0.20
 play (chord :Gb5, :major, sustain: 2)
-sleep 0.15
-play (chord :Ab5, :major, sustain: 2)
-sleep 0.35
-play (chord :Ab5, :major, sustain: 2)
 sleep 0.20
+play (chord :Ab5, :major, sustain: 2)
+sleep 0.45
+play (chord :Ab5, :major, sustain: 2)
+sleep 0.18
 play (chord :Gb5, :major, sustain: 2)
-sleep 0.20
+sleep 0.18
 play (chord :Ab5, :major)
-sleep 0.30
+sleep 0.21
 play (chord :Gb5, :major, sustain: 2)
 sleep 0.25
 play (chord :E5, :major, sustain: 1)
+sleep 0.30
+
+# NAINA MADAK BARFI
+
+play (chord :D4, :major)
+sleep 0.30
+play (chord :D4, :major, sustain: 1)
+sleep 0.35
+play (chord :D4, :major, sustain: 1)
+sleep 0.23
+play (chord :Db4, :major)
+sleep 0.20
+play (chord :D4, :major, sustain: 1)
+sleep 0.20
+play (chord :Db4, :major)
+sleep 0.20
+play (chord :D4, :major, sustain: 1)
+sleep 0.20
+play (chord :Db4, :major)
+sleep 0.40
+play (chord :B4, :major, sustain: 2)
 sleep 0.30
