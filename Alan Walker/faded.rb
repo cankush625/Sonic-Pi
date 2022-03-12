@@ -72,7 +72,7 @@ sleep 0.35
 play (chord :Db4, :major)
 sleep 0.60
 play (chord :Bb4, :major)
-sleep 0.40
+sleep 0.80
 
 # ANOTHER STAR YOU FADE AWAY
 
@@ -215,4 +215,138 @@ sleep 0.35
 play (chord :F4, :major)
 sleep 0.35
 play (chord :F4, :major)
+sleep 0.80
+
+# WHERE ARE YOU NOW?
+
+play (chord :Bb4, :major)
+sleep 0.35
+play (chord :Bb4, :major)
+sleep 0.35
+play (chord :Bb4, :major)
+sleep 0.35
+play (chord :Bb4, :major)
+sleep 1.2
+
+# ATLANTIS UNDER THE SEA
+
+play (chord :Eb4, :major)
+sleep 0.35
+play (chord :Eb4, :major)
+sleep 0.35
+play (chord :Db4, :major)
+sleep 0.45
+play (chord :Db4, :major)
+sleep 0.35
+play (chord :Db5, :major)
+sleep 0.33
+play (chord :Bb4, :major)
+sleep 0.30
+play (chord :Bb4, :major)
+sleep 0.80
+
+# WHERE ARE YOU NOW?
+
+play (chord :Bb4, :major)
+sleep 0.35
+play (chord :Bb4, :major)
+sleep 0.35
+play (chord :Bb4, :major)
+sleep 0.35
+play (chord :Bb4, :major)
+sleep 0.80
+
+# ANOTHER DREAM
+
+play (chord :Gb4, :major)
+sleep 0.35
+play (chord :Gb4, :major)
+sleep 0.35
+play (chord :Eb4, :major)
+sleep 0.35
+play (chord :B4, :major)
+sleep 0.80
+
+# THE MONSTER'S RUNNING WILD INSIDE OF ME
+
+play (chord :Db5, :major)
+sleep 0.40
+play (chord :Bb4, :major)
+sleep 0.40
+play (chord :Db5, :major)
+sleep 0.40
+play (chord :Bb4, :major)
+sleep 0.40
+play (chord :Db5, :major)
+sleep 0.40
+play (chord :Bb4, :major)
+sleep 0.40
+play (chord :Db5, :major)
+sleep 0.40
+play (chord :Bb4, :major)
+sleep 0.40
+play (chord :Ab4, :major)
+sleep 0.40
+play (chord :B4, :major)
+sleep 1
+
+# I'M FADED
+
+play (chord :Eb4, :major)
+sleep 0.40
+play (chord :B4, :major)
+sleep 0.60
+play (chord :Bb4, :major, sustain: 2)
+sleep 0.80
+
+sleep 1
+
+# I'M FADED
+
+play (chord :Eb4, :major)
+sleep 0.40
+play (chord :B4, :major)
+sleep 0.60
+play (chord :Bb4, :major, sustain: 2)
+sleep 0.80
+
+sleep 0.20
+
+# SO LOST I'M FADED
+
+play (chord :Gb4, :major)
+sleep 0.50
+play (chord :G4, :major, sustain: 2)
+sleep 0.70
+play (chord :Eb4, :major)
+sleep 0.40
+play (chord :B4, :major)
+sleep 0.60
+play (chord :Bb4, :major, sustain: 2)
+sleep 0.80
+
+sleep 1
+
+# I'M FADED
+
+play (chord :Eb4, :major)
+sleep 0.40
+play (chord :B4, :major)
+sleep 0.60
+play (chord :Db5, :major, sustain: 2)
+sleep 0.80
+
+sleep 0.20
+
+# SO LOST I'M FADED
+
+play (chord :Gb4, :major)
+sleep 0.50
+play (chord :G4, :major, sustain: 2)
+sleep 0.70
+play (chord :Eb4, :major)
+sleep 0.40
+play (chord :B4, :major)
+sleep 0.60
+play (chord :Bb4, :major, sustain: 2)
 sleep 0.80
