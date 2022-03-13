@@ -238,15 +238,15 @@ sleep 0.80
 # WERE YOU ONLY IMAGINARY?
 
 play (chord :Gb4, :major)
-sleep 0.30
+sleep 0.35
 play (chord :Gb4, :major)
-sleep 0.30
+sleep 0.35
 play (chord :Gb4, :major)
-sleep 0.30
+sleep 0.40
 play (chord :Ab4, :major)
 sleep 0.35
 play (chord :Gb4, :major)
-sleep 0.35
+sleep 0.30
 play (chord :F4, :major)
 sleep 0.35
 play (chord :F4, :major)
