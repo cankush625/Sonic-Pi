@@ -6,39 +6,55 @@ use_bpm 60
 
 2.times do
   
+  play (chord :Gb3, :major)
   play (chord :Gb4, :major)
   sleep 0.75
+  play (chord :Gb3, :major)
   play (chord :Gb4, :major)
   sleep 0.75
+  play (chord :Gb3, :major)
   play (chord :Gb4, :major)
   sleep 0.75
+  play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.80
   
+  play (chord :Eb3, :major)
   play (chord :Eb5, :major)
   sleep 0.75
+  play (chord :Eb3, :major)
   play (chord :Eb5, :major)
   sleep 0.75
+  play (chord :Eb3, :major)
   play (chord :Eb5, :major)
   sleep 0.75
+  play (chord :Db3, :major)
   play (chord :Db5, :major)
   sleep 0.80
   
+  play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.75
+  play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.75
+  play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.75
+  play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.80
   
+  play (chord :F3, :major)
   play (chord :F4, :major)
   sleep 0.75
+  play (chord :F3, :major)
   play (chord :F4, :major)
   sleep 0.75
+  play (chord :F3, :major)
   play (chord :F4, :major)
   sleep 0.75
+  play (chord :F3, :major)
   play (chord :F4, :major)
   sleep 0.80
 end
@@ -47,49 +63,70 @@ sleep 0.20
 
 # YOU WERE THE SHADOW TO MY LIGHT
 
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
 sleep 0.35
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
-sleep 0.40
+sleep 0.35
+play (chord :Eb3, :major)
 play (chord :Eb4, :major)
 sleep 0.35
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
 sleep 0.35
+play (chord :Eb3, :major)
 play (chord :Eb4, :major)
 sleep 0.35
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
 sleep 0.35
+play (chord :Ab3, :major)
 play (chord :Ab4, :major)
 sleep 0.35
+play (chord :Bb3, :major)
 play (chord :Bb4, :major)
 sleep 0.70
 
 # DID YOU FEEL US?
+
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
 sleep 0.35
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
 sleep 0.35
+play (chord :Gb3, :major)
 play (chord :Db4, :major)
-sleep 0.60
+sleep 0.50
+play (chord :Bb3, :major)
 play (chord :Bb4, :major)
 sleep 0.80
 
 # ANOTHER STAR YOU FADE AWAY
 
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
 sleep 0.35
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
 sleep 0.35
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
 sleep 0.35
+play (chord :F3, :major)
 play (chord :F4, :major)
 sleep 0.75
+play (chord :F3, :major)
 play (chord :F4, :major)
 sleep 0.35
+play (chord :F3, :major)
 play (chord :F4, :major)
 sleep 0.35
+play (chord :Eb3, :major)
 play (chord :Eb4, :major)
 sleep 0.35
+play (chord :Gb3, :major)
 play (chord :Gb4, :major)
 sleep 1
 
