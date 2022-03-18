@@ -202,58 +202,92 @@ with_fx :reverb, room: 1 do
   # chorus music
   
   in_thread do
-    2.times do
-      with_fx :reverb do
-        with_synth :saw do
-          synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Gb4), slide: 6
-          sleep 0.7
-          synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Gb4), slide: 6
-          sleep 0.7
-          synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Gb4), slide: 6
-          sleep 0.7
-          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Bb4), slide: 6
-          sleep 0.7
-          synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Eb5), slide: 6
-          sleep 0.7
-          synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Eb5), slide: 6
-          sleep 0.7
-          synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Eb5), slide: 6
-          sleep 0.7
-          synth = play note(:Db5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Db5), slide: 6
-          sleep 0.7
-          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Bb4), slide: 6
-          sleep 0.7
-          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Bb4), slide: 6
-          sleep 0.7
-          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Bb4), slide: 6
-          sleep 0.7
-          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:Bb4), slide: 6
-          sleep 0.7
-          synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:F4), slide: 6
-          sleep 0.7
-          synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:F4), slide: 6
-          sleep 0.7
-          synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:F4), slide: 6
-          sleep 0.7
-          synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
-          control synth, note: note(:F4), slide: 6
-          sleep 0.7
-        end
+    with_fx :reverb do
+      with_synth :saw do
+        synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Gb4), slide: 6
+        sleep 0.7
+        synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Gb4), slide: 6
+        sleep 0.7
+        synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Gb4), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
+        synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Eb5), slide: 6
+        sleep 0.7
+        synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Eb5), slide: 6
+        sleep 0.7
+        synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Eb5), slide: 6
+        sleep 0.7
+        synth = play note(:Db5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Db5), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
+        synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:F4), slide: 6
+        sleep 0.7
+        synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:F4), slide: 6
+        sleep 0.7
+        synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:F4), slide: 6
+        sleep 0.7
+        synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:F4), slide: 6
+        sleep 0.7
+        synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Gb4), slide: 6
+        sleep 0.7
+        synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Gb4), slide: 6
+        sleep 0.7
+        synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Gb4), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
+        synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Eb5), slide: 6
+        sleep 0.7
+        synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Eb5), slide: 6
+        sleep 0.7
+        synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Eb5), slide: 6
+        sleep 0.7
+        synth = play note(:Db5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Db5), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
+        synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+        control synth, note: note(:Bb4), slide: 6
+        sleep 0.7
       end
     end
   end
@@ -355,8 +389,8 @@ with_fx :reverb, room: 1 do
   sleep 0.35
   play (chord :Gb3, :major)
   play (chord :Gb4, :major)
-
-  # drum chorus for Where are now? line below
+  
+  # drum chorus for Where are you now? line below
   
   in_thread do
     sample :drum_cymbal_closed, amp: 0.2
@@ -366,20 +400,24 @@ with_fx :reverb, room: 1 do
     sample :drum_cymbal_closed, amp: 0.2
     sleep 0.6
     
-    sample :drum_bass_soft, amp: 2
+    sleep 0.8
+    
+    sample :bd_haus, amp: 1
     sample :drum_cymbal_closed, amp: 0.2
     sleep 0.17
-    sample :drum_bass_soft, amp: 2
+    sample :bd_haus, amp: 1
     sleep 0.17
-    sample :drum_bass_soft, amp: 2
+    sample :bd_haus, amp: 1
     sleep 0.1
-    sample :drum_bass_soft, amp: 2
-    sleep 0.17
+    sample :bd_haus, amp: 1
+    sleep 0.1
+    sample :bd_haus, amp: 1
+    sleep 0.1
     sample :drum_bass_hard, amp: 3
     sample :drum_cymbal_hard, amp: 2
     sleep 0.5
   end
-
+  
   sleep 0.30
   play (chord :F3, :major)
   play (chord :F4, :major)
@@ -391,20 +429,21 @@ with_fx :reverb, room: 1 do
   play (chord :F4, :major)
   sleep 0.80
   
+  sleep 1
+  
   # WHERE ARE YOU NOW?
   
-  play (chord :Bb3, :major), amp: 3
-  play (chord :Bb4, :major), amp: 3
+  play (chord :Bb3, :major), amp: 2
+  play (chord :Bb4, :major), amp: 2
   sleep 0.35
-  play (chord :Bb3, :major), amp: 3
-  play (chord :Bb4, :major), amp: 3
+  play (chord :Bb3, :major), amp: 2
+  play (chord :Bb4, :major), amp: 2
   sleep 0.35
-  play (chord :Bb3, :major), amp: 3
-  play (chord :Bb4, :major), amp: 3
-  sleep 0.18
-  sleep 0.18
-  play (chord :Bb3, :major), amp: 3
-  play (chord :Bb4, :major, sustain: 2), amp: 3
+  play (chord :Bb3, :major), amp: 2
+  play (chord :Bb4, :major), amp: 2
+  sleep 0.35
+  play (chord :Bb3, :major), amp: 2
+  play (chord :Bb4, :major, sustain: 2), amp: 2
   sleep 1.2
   
   # ATLANTIS UNDER THE SEA
