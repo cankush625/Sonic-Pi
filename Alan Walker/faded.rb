@@ -5,7 +5,7 @@ use_bpm 60
 # Starting Music
 
 with_fx :reverb, room: 1 do
-  2.times do
+  1.times do
     
     play (chord :Gb3, :major)
     play (chord :Gb4, :major)
@@ -187,17 +187,17 @@ with_fx :reverb, room: 1 do
   
   # WHERE ARE YOU NOW?
   
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   
   # chorus music
   
@@ -262,17 +262,17 @@ with_fx :reverb, room: 1 do
   
   # WHERE ARE YOU NOW?
   
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.40
   
   # chorus music
@@ -281,20 +281,20 @@ with_fx :reverb, room: 1 do
   
   # WHERE ARE YOU NOW?
   
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
   with_fx :reverb, room: 1 do
     play 30, amp: 5, release: 2, cutoff: 110
   end
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.80
   
   # WAS IT ALL IN MY FANTACY?
@@ -326,17 +326,17 @@ with_fx :reverb, room: 1 do
   
   # WHERE ARE YOU NOW?
   
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.80
   
   # WERE YOU ONLY IMAGINARY?
@@ -355,6 +355,31 @@ with_fx :reverb, room: 1 do
   sleep 0.35
   play (chord :Gb3, :major)
   play (chord :Gb4, :major)
+
+  # drum chorus for Where are now? line below
+  
+  in_thread do
+    sample :drum_cymbal_closed, amp: 0.2
+    sleep 0.7
+    sample :drum_cymbal_closed, amp: 0.2
+    sleep 0.7
+    sample :drum_cymbal_closed, amp: 0.2
+    sleep 0.6
+    
+    sample :drum_bass_soft, amp: 2
+    sample :drum_cymbal_closed, amp: 0.2
+    sleep 0.17
+    sample :drum_bass_soft, amp: 2
+    sleep 0.17
+    sample :drum_bass_soft, amp: 2
+    sleep 0.1
+    sample :drum_bass_soft, amp: 2
+    sleep 0.17
+    sample :drum_bass_hard, amp: 3
+    sample :drum_cymbal_hard, amp: 2
+    sleep 0.5
+  end
+
   sleep 0.30
   play (chord :F3, :major)
   play (chord :F4, :major)
@@ -368,18 +393,18 @@ with_fx :reverb, room: 1 do
   
   # WHERE ARE YOU NOW?
   
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.18
   sleep 0.18
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major, sustain: 2)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major, sustain: 2), amp: 3
   sleep 1.2
   
   # ATLANTIS UNDER THE SEA
@@ -408,17 +433,17 @@ with_fx :reverb, room: 1 do
   
   # WHERE ARE YOU NOW?
   
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.35
-  play (chord :Bb3, :major)
-  play (chord :Bb4, :major)
+  play (chord :Bb3, :major), amp: 3
+  play (chord :Bb4, :major), amp: 3
   sleep 0.80
   
   # ANOTHER DREAM
