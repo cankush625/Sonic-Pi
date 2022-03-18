@@ -196,59 +196,88 @@ with_fx :reverb, room: 1 do
   play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.35
-  sample :drum_bass_soft
   play (chord :Bb3, :major)
   play (chord :Bb4, :major)
-  sleep 0.40
   
   # chorus music
   
-  play (chord :Eb3, :major, release: 2)
-  play (chord :Eb4, :major, release: 2)
-  sleep 1
-  play (chord :Eb3, :major, release: 2)
-  play (chord :Eb4, :major, release: 2)
-  sleep 1
-  play (chord :Eb3, :major, release: 2)
-  play (chord :Eb4, :major, release: 2)
-  sleep 1
-  play (chord :Db3, :major, release: 2)
-  play (chord :Db4, :major, release: 2)
-  sleep 0.70
+  in_thread do
+    2.times do
+      with_fx :reverb do
+        with_synth :saw do
+          synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Gb4), slide: 6
+          sleep 0.7
+          synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Gb4), slide: 6
+          sleep 0.7
+          synth = play note(:Gb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Gb4), slide: 6
+          sleep 0.7
+          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Bb4), slide: 6
+          sleep 0.7
+          synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Eb5), slide: 6
+          sleep 0.7
+          synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Eb5), slide: 6
+          sleep 0.7
+          synth = play note(:Eb5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Eb5), slide: 6
+          sleep 0.7
+          synth = play note(:Db5), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Db5), slide: 6
+          sleep 0.7
+          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Bb4), slide: 6
+          sleep 0.7
+          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Bb4), slide: 6
+          sleep 0.7
+          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Bb4), slide: 6
+          sleep 0.7
+          synth = play note(:Bb4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:Bb4), slide: 6
+          sleep 0.7
+          synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:F4), slide: 6
+          sleep 0.7
+          synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:F4), slide: 6
+          sleep 0.7
+          synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:F4), slide: 6
+          sleep 0.7
+          synth = play note(:F4), note_slide: 6, cutoff: 95, attack: 0.01, decay: 0.05, release: 0.2
+          control synth, note: note(:F4), slide: 6
+          sleep 0.7
+        end
+      end
+    end
+  end
+  
+  sleep 4
   
   # WHERE ARE YOU NOW?
   
-  sample :drum_heavy_kick
   play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.35
-  sample :drum_heavy_kick
   play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.35
-  sample :drum_heavy_kick
   play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.35
-  sample :drum_heavy_kick
   play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.40
   
   # chorus music
   
-  play (chord :Eb3, :major, release: 2)
-  play (chord :Eb4, :major, release: 2)
-  sleep 1
-  play (chord :Eb3, :major, release: 2)
-  play (chord :Eb4, :major, release: 2)
-  sleep 1
-  play (chord :Eb3, :major, release: 2)
-  play (chord :Eb4, :major, release: 2)
-  sleep 1
-  play (chord :Db3, :major, release: 2)
-  play (chord :Db4, :major, release: 2)
-  sleep 0.70
+  sleep 3.6
   
   # WHERE ARE YOU NOW?
   
