@@ -9,52 +9,52 @@ with_fx :reverb, room: 1 do
     
     play (chord :Gb3, :major)
     play (chord :Gb4, :major)
-    sleep 0.75
+    sleep 0.70
     play (chord :Gb3, :major)
     play (chord :Gb4, :major)
-    sleep 0.75
+    sleep 0.70
     play (chord :Gb3, :major)
     play (chord :Gb4, :major)
-    sleep 0.75
+    sleep 0.70
     play (chord :Bb3, :major)
     play (chord :Bb4, :major)
-    sleep 0.80
+    sleep 0.75
     
     play (chord :Eb3, :major)
     play (chord :Eb5, :major)
-    sleep 0.75
+    sleep 0.70
     play (chord :Eb3, :major)
     play (chord :Eb5, :major)
-    sleep 0.75
+    sleep 0.70
     play (chord :Eb3, :major)
     play (chord :Eb5, :major)
-    sleep 0.75
+    sleep 0.70
     play (chord :Db3, :major)
     play (chord :Db5, :major)
-    sleep 0.80
+    sleep 0.75
     
     play (chord :Bb3, :major)
     play (chord :Bb4, :major)
-    sleep 0.75
+    sleep 0.70
+    play (chord :Bb3, :major)
+    play (chord :Bb4, :major)
+    sleep 0.70
+    play (chord :Bb3, :major)
+    play (chord :Bb4, :major)
+    sleep 0.70
     play (chord :Bb3, :major)
     play (chord :Bb4, :major)
     sleep 0.75
-    play (chord :Bb3, :major)
-    play (chord :Bb4, :major)
-    sleep 0.75
-    play (chord :Bb3, :major)
-    play (chord :Bb4, :major)
-    sleep 0.80
     
     play (chord :F3, :major)
     play (chord :F4, :major)
-    sleep 0.75
+    sleep 0.70
     play (chord :F3, :major)
     play (chord :F4, :major)
-    sleep 0.75
+    sleep 0.70
     play (chord :F3, :major)
     play (chord :F4, :major)
-    sleep 0.75
+    sleep 0.70
     play (chord :F3, :major)
     play (chord :F4, :major)
     sleep 0.80
@@ -99,7 +99,7 @@ with_fx :reverb, room: 1 do
   sleep 0.35
   play (chord :Gb3, :major)
   play (chord :Db4, :major)
-  sleep 0.45
+  sleep 0.40
   play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.80
@@ -331,6 +331,15 @@ with_fx :reverb, room: 1 do
   play (chord :Bb4, :major), amp: 3
   sleep 0.80
   
+  # chorus in background
+  
+  in_thread do
+    9.times do
+      sample :drum_cymbal_closed, amp: 0.2
+      sleep 0.7
+    end
+  end
+  
   # WAS IT ALL IN MY FANTACY?
   
   play (chord :Gb3, :major)
@@ -408,11 +417,11 @@ with_fx :reverb, room: 1 do
     sample :bd_haus, amp: 1
     sleep 0.17
     sample :bd_haus, amp: 1
-    sleep 0.1
+    sleep 0.12
     sample :bd_haus, amp: 1
-    sleep 0.1
+    sleep 0.12
     sample :bd_haus, amp: 1
-    sleep 0.1
+    sleep 0.12
     sample :drum_bass_hard, amp: 3
     sample :drum_cymbal_hard, amp: 2
     sleep 0.5
@@ -442,7 +451,7 @@ with_fx :reverb, room: 1 do
   play (chord :Bb3, :major), amp: 2
   play (chord :Bb4, :major), amp: 2
   sleep 0.35
-  play (chord :Bb3, :major), amp: 2
+  play (chord :Bb3, :major, sustain: 2), amp: 2
   play (chord :Bb4, :major, sustain: 2), amp: 2
   sleep 1.2
   
@@ -487,44 +496,61 @@ with_fx :reverb, room: 1 do
   
   # ANOTHER DREAM
   
+  play (chord :Gb3, :major)
   play (chord :Gb4, :major)
   sleep 0.35
+  play (chord :Gb3, :major)
   play (chord :Gb4, :major)
   sleep 0.35
+  play (chord :Eb3, :major)
   play (chord :Eb4, :major)
   sleep 0.35
+  play (chord :B3, :major)
   play (chord :B4, :major)
   sleep 0.80
   
   # THE MONSTER'S RUNNING WILD INSIDE OF ME
   
+  play (chord :Db3, :major)
   play (chord :Db5, :major)
   sleep 0.40
+  play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.40
+  play (chord :Db3, :major)
   play (chord :Db5, :major)
   sleep 0.40
+  play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.40
+  play (chord :Db3, :major)
   play (chord :Db5, :major)
   sleep 0.40
+  play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.40
+  play (chord :Db3, :major)
   play (chord :Db5, :major)
   sleep 0.40
+  play (chord :Bb3, :major)
   play (chord :Bb4, :major)
   sleep 0.40
+  play (chord :Ab3, :major)
   play (chord :Ab4, :major)
   sleep 0.40
+  play (chord :B3, :major)
   play (chord :B4, :major)
   sleep 1
   
   # I'M FADED
   
+  play (chord :Eb3, :major)
   play (chord :Eb4, :major)
   sleep 0.40
+  play (chord :B3, :major)
   play (chord :B4, :major)
   sleep 0.60
+  play (chord :Bb3, :major, sustain: 2)
   play (chord :Bb4, :major, sustain: 2)
   sleep 0.80
   
@@ -532,10 +558,13 @@ with_fx :reverb, room: 1 do
   
   # I'M FADED
   
+  play (chord :Eb3, :major)
   play (chord :Eb4, :major)
   sleep 0.40
+  play (chord :B3, :major)
   play (chord :B4, :major)
   sleep 0.60
+  play (chord :Bb3, :major, sustain: 2)
   play (chord :Bb4, :major, sustain: 2)
   sleep 0.80
   
@@ -543,14 +572,19 @@ with_fx :reverb, room: 1 do
   
   # SO LOST I'M FADED
   
+  play (chord :Gb3, :major)
   play (chord :Gb4, :major)
   sleep 0.50
+  play (chord :G3, :major, sustain: 2)
   play (chord :G4, :major, sustain: 2)
   sleep 0.70
+  play (chord :Eb3, :major)
   play (chord :Eb4, :major)
   sleep 0.40
+  play (chord :B3, :major)
   play (chord :B4, :major)
   sleep 0.60
+  play (chord :Bb3, :major, sustain: 2)
   play (chord :Bb4, :major, sustain: 2)
   sleep 0.80
   
@@ -558,8 +592,10 @@ with_fx :reverb, room: 1 do
   
   # I'M FADED
   
+  play (chord :Eb3, :major)
   play (chord :Eb4, :major)
   sleep 0.40
+  play (chord :B3, :major)
   play (chord :B4, :major)
   sleep 0.60
   play (chord :Db5, :major, sustain: 2)
